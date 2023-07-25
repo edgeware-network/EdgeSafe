@@ -8,15 +8,9 @@ import type { AddressEx } from '@safe-global/safe-gateway-typescript-sdk'
 const IMMORTAL_PREFIX = '_immortal|v2_'
 
 const CHAIN_PREFIXES: Record<string, string> = {
-  '1': 'MAINNET',
-  '56': 'BSC',
-  '100': 'XDAI',
-  '137': 'POLYGON',
-  '246': 'ENERGY_WEB_CHAIN',
-  '42161': 'ARBITRUM',
-  '73799': 'VOLTA',
+  '2021' : 'EDGEWARE_MAINNET',
 }
-const ALL_CHAINS = ['1', '100', '137', '56', '246', '42161', '1313161554', '43114', '10', '5', '73799']
+const ALL_CHAINS = ['2021']
 
 const OLD_LS_KEY = '__SAFES'
 

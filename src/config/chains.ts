@@ -1,4 +1,4 @@
-import { networks } from '@safe-global/safe-core-sdk-utils/dist/src/eip-3770/config'
+//import { networks } from '@safe-global/safe-core-sdk-utils/dist/src/eip-3770/config'
 
 /**
  * A static shortName<->chainId dictionary
@@ -10,6 +10,16 @@ import { networks } from '@safe-global/safe-core-sdk-utils/dist/src/eip-3770/con
  *   ...
  * }
  */
+interface NetworkShortName {
+  shortName: string
+  chainId: number
+}
+
+// https://github.com/ethereum-lists/chains/tree/master/_data/chains
+export const networks: NetworkShortName[] = [
+  { chainId: 2021, shortName: 'edg' }
+]
+
 type Chains = Record<string, string>
 
 const chains = networks.reduce<Chains>((result, { shortName, chainId }) => {
@@ -18,3 +28,4 @@ const chains = networks.reduce<Chains>((result, { shortName, chainId }) => {
 }, {})
 
 export default chains
+
