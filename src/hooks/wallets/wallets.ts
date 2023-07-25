@@ -35,7 +35,7 @@ const walletConnectV1 = (): WalletInit => {
 const walletConnectV2 = (chain: ChainInfo): WalletInit => {
   return walletConnect({
     version: 2,
-    projectId: '30c9df49baa0bc7629e22c5f4512fc7d',
+    projectId: WC_PROJECT_ID,
     qrModalOptions: {
       themeVariables: {
         '--wcm-z-index': '1302',

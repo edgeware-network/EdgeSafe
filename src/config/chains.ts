@@ -16,9 +16,7 @@ interface NetworkShortName {
 }
 
 // https://github.com/ethereum-lists/chains/tree/master/_data/chains
-export const networks: NetworkShortName[] = [
-  { chainId: 2021, shortName: 'edg' }
-]
+export const networks: NetworkShortName[] = [{ chainId: 2021, shortName: 'edg' }]
 
 type Chains = Record<string, string>
 
@@ -28,4 +26,3 @@ const chains = networks.reduce<Chains>((result, { shortName, chainId }) => {
 }, {})
 
 export default chains
-

@@ -8,7 +8,7 @@ import type { AddressEx } from '@safe-global/safe-gateway-typescript-sdk'
 const IMMORTAL_PREFIX = '_immortal|v2_'
 
 const CHAIN_PREFIXES: Record<string, string> = {
-  '2021' : 'EDGEWARE_MAINNET',
+  '2021': 'EDGEWARE_MAINNET',
 }
 const ALL_CHAINS = ['2021']
 

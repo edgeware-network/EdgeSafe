@@ -581,8 +581,14 @@ const CONFIG_SERVICE_CHAINS: ChainInfo[] = [
     l2: true,
     description: '',
     rpcUri: { authentication: RPC_AUTHENTICATION.NO_AUTHENTICATION, value: 'https://edgeware-evm.jelliedowl.net' },
-    safeAppsRpcUri: { authentication: RPC_AUTHENTICATION.NO_AUTHENTICATION, value: 'https://edgeware-evm.jelliedowl.net' },
-    publicRpcUri: { authentication: RPC_AUTHENTICATION.NO_AUTHENTICATION, value: 'https://edgeware-evm.jelliedowl.net' },
+    safeAppsRpcUri: {
+      authentication: RPC_AUTHENTICATION.NO_AUTHENTICATION,
+      value: 'https://edgeware-evm.jelliedowl.net',
+    },
+    publicRpcUri: {
+      authentication: RPC_AUTHENTICATION.NO_AUTHENTICATION,
+      value: 'https://edgeware-evm.jelliedowl.net',
+    },
     blockExplorerUriTemplate: {
       address: 'https://edgscan.live/address/{{address}}/transactions',
       txHash: 'https://edgscan.live/tx/{{txHash}}/internal-transactions',
