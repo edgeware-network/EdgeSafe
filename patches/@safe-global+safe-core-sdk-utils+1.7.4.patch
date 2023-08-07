@@ -1,5 +1,5 @@
 diff --git a/node_modules/@safe-global/safe-core-sdk-utils/dist/src/eip-3770/config.js b/node_modules/@safe-global/safe-core-sdk-utils/dist/src/eip-3770/config.js
-index 7dbddf5..d703afa 100644
+index 7dbddf5..94c74e6 100644
 --- a/node_modules/@safe-global/safe-core-sdk-utils/dist/src/eip-3770/config.js
 +++ b/node_modules/@safe-global/safe-core-sdk-utils/dist/src/eip-3770/config.js
 @@ -71,6 +71,7 @@ exports.networks = [
