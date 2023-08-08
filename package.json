@@ -3,7 +3,7 @@
   "homepage": "https://github.com/safe-global/safe-wallet-web",
   "license": "GPL-3.0",
   "type": "module",
-  "version": "1.14.0",
+  "version": "1.16.0",
   "scripts": {
     "dev": "next dev",
     "start": "next dev",
@@ -32,14 +32,17 @@
   "pre-commit": [
     "lint"
   ],
+  "resolutions": {
+    "@web3-onboard/trezor/**/protobufjs": "^7.2.4"
+  },
   "dependencies": {
     "@date-io/date-fns": "^2.15.0",
     "@emotion/cache": "^11.10.1",
     "@emotion/react": "^11.10.0",
     "@emotion/server": "^11.10.0",
     "@emotion/styled": "^11.10.0",
-    "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.11.10",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/material": "^5.14.3",
     "@mui/x-date-pickers": "^5.0.12",
     "@reduxjs/toolkit": "^1.9.5",
     "@safe-global/safe-apps-sdk": "7.11.0",
@@ -47,9 +50,9 @@
     "@safe-global/safe-core-sdk-utils": "^1.7.4",
     "@safe-global/safe-deployments": "^1.25.0",
     "@safe-global/safe-ethers-lib": "^1.9.4",
-    "@safe-global/safe-gateway-typescript-sdk": "^3.7.3",
+    "@safe-global/safe-gateway-typescript-sdk": "^3.8.0",
     "@safe-global/safe-modules-deployments": "^1.0.0",
-    "@safe-global/safe-react-components": "^2.0.5",
+    "@safe-global/safe-react-components": "^2.0.6",
     "@sentry/react": "^7.28.1",
     "@sentry/tracing": "^7.28.1",
     "@truffle/hdwallet-provider": "^2.1.4",
@@ -66,6 +69,7 @@
     "ethereum-blockies-base64": "^1.0.2",
     "ethers": "5.7.2",
     "exponential-backoff": "^3.1.0",
+    "framer-motion": "^10.13.1",
     "fuse.js": "^6.6.2",
     "js-cookie": "^3.0.1",
     "lodash": "^4.17.21",
